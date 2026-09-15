@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Seleção de Estilo de Filme</h1>
+
+    <p id="resultado">..</p>
+    
+    <script>
+        let opcao= Number(prompt(
+    `"Escolha seu estilo de filme favorito:",
+    "1 - Ação",
+    "2 - Comédia",
+    "3 - Drama ",
+    "4 - Terror",
+    "5 - Ficção cientifica",
+    "6 -  Romance"`
+));
+
+let estilo;
+    switch(opcao){
+        case 1 :
+            estilo = "Ação";
+        break;
+
+        case 2 :
+            estilo = "Comédia";
+        break;
+        case 3 :
+            estilo = "Drama";
+        break;
+        case 4 :
+            estilo = "Terror";
+        break;
+        case 5:
+            estilo = "Ficção cientifica";
+        break;
+        case 6 :
+            estilo = "Romance";
+        break;
+
+        default:
+            estilo = "Opção invalida";
+    }
+
+    document.getElementById("resultado").textContent = "Seu estilo de filme favorito é " + estilo;
+    </script>
+</body>
+</html>

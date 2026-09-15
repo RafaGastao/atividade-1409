@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculo de valor de compra
+    </h1>
+
+    <p id="resultado">..</p>
+    
+    <script>
+let valor = parseInt(prompt(
+    `"Digite o valor total da compra"`
+));
+
+let opcao= parseInt(prompt(
+    `"Escolha seu estilo de filme favorito:",
+    "1 - Pix",
+    "2 - Debito",
+    "3 - Credito "`
+));
+
+
+
+
+
+let reposta; 
+
+
+switch (opcao) { 
+    case 1: 
+        reposta = valor - (valor * 0.1); 
+        break; 
+    case 2: 
+        reposta = valor - (valor * 0.05); 
+        break; 
+    case 3: 
+        reposta = valor; 
+        break; 
+    default: 
+        reposta = "Opção inválida"; 
+        break; 
+}
+
+   
+
+    document.getElementById("resultado").textContent = "Seu valor final da compra é " + reposta;
+    </script>
+</body>
+</html>

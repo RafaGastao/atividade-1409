@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Seu Tema de Escolha
+    </h1>
+
+    <p id="resultado">..</p>
+    
+    <script src="script.js">
+        let opcao= Number(prompt(
+    `"Escolha seu estilo de filme favorito:",
+    "1 - Java",
+    "2 - COBOL",
+    "3 - PHP ",
+    "4 - Portugol",
+    "5 - HTML",
+    "6 -  CSS"`
+));
+
+let estilo;
+    switch(opcao){
+        case 1 :
+            estilo = "Java";
+        break;
+
+        case 2 :
+            estilo = "COBOL";
+        break;
+        case 3 :
+            estilo = "PHP";
+        break;
+        case 4 :
+            estilo = "Portugol";
+        break;
+        case 5:
+            estilo = "HTML";
+        break;
+        case 6 :
+            estilo = "CSS";
+        break;
+
+        default:
+            estilo = "Opção invalida";
+    }
+
+    document.getElementById("resultado").textContent = "Seu tema de estudo escolhido é " + estilo;
+    </script>
+</body>
+</html>

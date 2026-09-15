@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Seleção de Estilo de Musica</h1>
+    <ul>
+        <li>1 - Rock</li>
+        <li>2 - POP</li>
+        <li>3 -  Hip Hop </li>
+        <li>4 -  Eletronica</li>
+        <li>5 - Jazz</li>
+        <li>6 -  Classica</li>
+    </ul>
+
+    <p id="resultado">..</p>
+    
+    <script>
+
+let opcao= parseInt(prompt(
+    `"Escolha seu estilo de filme favorito:",
+    "1 - Rock",
+    "2 - POP",
+    "3 -  Hip Hop ",
+    "4 -  Eletronica",
+    "5 - Jazz",
+    "6 -  Classica"`
+));
+
+let estilo;
+    switch(opcao){
+        case 1 :
+            estilo = "Rock";
+        break;
+
+        case 2 :
+            estilo = "POP";
+        break;
+        case 3 :
+            estilo = "Hip Hop";
+        break;
+        case 4 :
+            estilo = "Eletronica";
+        break;
+        case 5:
+            estilo = "Jazz";
+        break;
+        case 6 :
+            estilo = "Classica";
+        break;
+
+        default:
+            estilo = "Opção invalida";
+    }
+
+    document.getElementById("resultado").textContent = "Seu gênero musical preferido é " + estilo;
+    </script>
+</body>
+</html>
